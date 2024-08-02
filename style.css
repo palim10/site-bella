@@ -1,0 +1,436 @@
+@font-face {
+    font-family: "Moneta-Light";
+    src: url("/font/Moneta-Regular.ttf") format("ttf")
+}
+
+@font-face {
+    font-family: "Inter-ExtraLight";
+    src: url("public/Inter/static/Inter-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("public/Inter/static/Inter-Bold.ttf");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Inter-ExtraLight';
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-logo img {
+    width: 50px;
+    height: 50px;
+    right: 1%;
+    bottom: 1%;
+    border-radius: 50%;
+}
+
+/* MAIN ------------------------------------------------------------------------------------ */
+
+.main-bella {
+    height: 80dvh;
+    width: 100%;
+    background-color: #f88581;
+}
+
+.bella-container {
+    width: min(1536px, 95%);
+    align-items: center;
+    display: flex;
+    color: white;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.description-bella {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-bella h1 {
+    font-family: Moneta-Light;
+    font-weight: lighter;
+    font-size: 60px;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.text-bella p {
+    color: #ffffff;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.text-bella h1 span {
+    color: #000000;
+}
+
+.text-bella p span {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.btn-bella {
+    padding-top: 20px;
+}
+
+.btn-bella button {
+    width: 12rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.img-bella {
+    flex: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%; /* ou qualquer valor desejado para o comprimento dinâmico */
+    height: 100%;/* mantém a proporção da altura */
+    object-fit: cover; /* garante que a imagem não distorça */
+  }
+
+
+/* SECTION Career=Carreira ---------------------------------------------- */
+
+.career-section {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 75px;
+}
+
+.career-title {
+    font-weight: 200;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.career-title h1 {
+    font-family: Inter-Bold;
+    font-size: clamp(35px, 6vw, 46px);
+}
+
+.career-title h1 span {
+    color: #f88581;
+}
+
+/* SECTION Grid=Grade ---------------------------------------------- */
+
+.grid-section {
+    display: flex;
+    margin-top: 40px;
+}
+
+.grid-container {
+    gap: 5px;
+    display: grid;
+    width: min(1536px, 95%);
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.grid-card {
+
+    background-color: #ffe9e8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.grid-card:hover {
+    box-shadow: 0 0 45px 0 rgba(111, 86, 86, .18);
+    transition: 0.7s;
+}
+
+.grid-info {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-info h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(248, 133, 129);
+}
+
+.grid-info h2 {
+    margin-top: 3vh;
+    font-size: 21px;
+}
+
+
+.grid-info h2 strong {
+    font-family: Inter-Bold;
+}
+
+
+
+/* SECTION Biografy=Biografia ---------------------------------------------- */
+
+.biografy-section {
+    padding: 100px 0;
+    gap: 50px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: min(1536px, 95%);
+    margin: 0 auto;
+}
+
+.biografy-section::before {
+    content: " ";
+    z-index: -1;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+}
+
+.biografy-article {
+   flex: 1;
+   width: 100%;
+}
+
+.biografy-article h1 {
+    font-family: Inter-Bold;
+    font-size: 40px;
+}
+
+.biografy-article h1 span {
+    color: #f88581;
+}
+
+.biografy-article p {
+    padding-top: 18px;
+}
+
+.biografy-img{
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    flex: 1;
+}
+
+
+/* SECTION Procedimentos=Procedures ---------------------------------------------- */
+
+.procedures-section {
+    gap: 30px;
+    width: 100%;
+    color: white;
+    background-color: rgb(248, 133, 129);
+}
+
+
+.procedures-wrapper{
+    display: flex;
+    justify-content: center;
+    width: min(1536px, 95%);
+    margin: 0 auto;
+}
+
+.procedures-img {
+    margin-top: -10%;
+}
+
+.procedures-img img {
+    margin-bottom: -2px;
+    vertical-align: middle;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.procedures-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.procedures-title {
+    font-size: clamp(35px, 5vw, 65px);
+    color: white;
+    font-family: Moneta-Light;
+}
+
+
+.procedures-list {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.procedures-list div {
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.procedures-list div h3 {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION Win=Conquistas ---------------------------------------------- */
+
+.win-section {
+    width: min(1024px, 95%);
+    margin: 0 auto;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    min-width: 0;
+    padding: 50px 0px;
+}
+
+.win-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 3rem;
+    flex-direction: column;
+}
+
+.win-title {
+    font-size: 48px;
+    padding: 0 0 3% 0;
+    font-family: Monet-Light;
+}
+
+.win-title span {
+    color: #f88581;
+}
+
+.win-list div {
+    margin-top: 2%;
+    border-radius: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.win-list div h3 {
+    padding-left: 10px;
+}
+
+.win-btn {
+    height: 3rem;
+    width: 20rem;
+    margin-top: 3%;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #f88581;
+}
+
+.win-btn:hover {
+    color: #f88581;
+    border: #f88581 solid 1px;
+    background-color: #f0f8ff;
+    transition: 0.5s;
+}
+
+/* SECTION Contacts=Contatos ---------------------------------------------- */
+
+.contacts-section {
+    height: 130vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #313031;
+    position: relative;
+}
+
+.contacts-flower-one img {
+    width: 35vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.contacts-flower-two img {
+    width: 35vh;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.contacts-container h1 {
+    color: #ffffff;
+    font-family: Moneta-Light;
+    font-size: 64px;
+    font-weight: lighter;
+    line-height: 60px;
+}
+
+.contacts-containter h1,
+span {
+    color: #f88581;
+}
+
+.contacts-container p {
+    padding: 5% 0 5% 0;
+    color: #ffffff;
+}
+
+.contacts-container p strong {
+    font-family: Inter-Bold;
+}
+
+.contacts-container button {
+    width: 200px;
+    height: 40px;
+    background-color: #f88581;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+/* FOOTER -----------------------------------------*/
+
+footer {
+    font-family: Moneta-Light;
+    font-size: 15px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}

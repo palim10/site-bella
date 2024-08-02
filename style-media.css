@@ -1,0 +1,365 @@
+@media screen and (max-width: 800px) {
+
+    
+
+    /* Main ------------------- */
+
+
+    .main-bella {
+        display: flex;
+        width: 100%;
+        padding-top: 4rem;
+        height: 100%;
+    }
+
+    .img-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bella-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .description-bella {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-bella {
+        text-align: center;
+    }
+
+    .text-bella h1 {
+        font-size: 65px;
+        width: 100%;
+    }
+
+    .text-bella p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .img-bella{
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    .img-bella img{
+        height: 20rem;
+    }
+
+    .btn-bella {
+        width: 100%;
+    }
+
+    .btn-bella {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-bella button {
+        height: 3rem;
+    }
+
+
+
+    /* Career ------------------------------------- */
+
+    .career-section {
+        width: 100%;
+    }
+
+    .career-title {
+        padding: 4% 0 0 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .career-title h1 {
+        width: 90%;
+        font-size: 28px;
+
+    }
+
+    /* Grid ------------------------------------------ */
+
+    .grid-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-container{
+        gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-info h2{
+        font-size: 16px;
+        margin-top: 1rem;
+    }
+
+
+    /* Biografy ------------------------------------------ */
+
+    .biografy-section {
+        height: 100%;
+        width: 95%;
+        padding: 0 0 10% 0;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+
+    .biografy-article {
+        margin: 25% 5% 0 5%;
+        width: 100%;
+        text-align: center;
+        background-color: aliceblue;
+        padding: 20px;
+    }
+
+    
+
+    .biografy-article h1 {
+        padding: 10% 0 10% 0;
+        height: 100%;
+        font-size: clamp(25px, 6vw, 50px);
+    }
+
+    .biografy-article p{
+        display: flex;
+        text-align: start;
+    }
+
+
+
+    .biografy-img {
+        border-radius: 1rem;
+        aspect-ratio: 0;
+        width: 90%;
+    }
+
+    /* Procedures ------------------------------------------ */
+
+
+    .procedures-section {
+        position: relative;
+    }
+
+    .procedures-wrapper{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .procedures-container {
+    margin-top: 30px;
+    }
+
+    .procedures-list{
+        padding-top: 20px;
+    }
+
+    .procedures-title{
+        font-size: 44px;
+    }
+
+    
+    
+
+    .procedures-img {
+        padding-top: 25px;
+        margin: 0 auto;
+    }
+
+    .procedures-img img {
+        bottom: 0;
+    }
+
+    /* Win ------------------------------------------ */
+
+    .win-section {
+        margin-top: 20px;
+        width: 95%;
+        padding: 0;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .win-container {
+        width: 95%;
+        gap: none;
+        margin-right: 13%;
+        display: flex;
+        align-items: center;
+        padding-left: 11%;
+        justify-content: center;
+    }
+
+    .win-container h1{
+        font-size: clamp(35px, 5vw, 50px);
+    }
+
+    .win-title {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+
+
+    .win-list div {
+        height: 3rem;
+        width: 100%;
+        font-size: 14px;
+        padding-top: 4rem;
+    }
+
+    .win-list button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    .win-btn {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    
+
+    .win-img img {
+        border-radius: 1rem;
+        height: 25rem;
+        width: 24rem;
+    }
+
+    /* Contacts ------------------------------------------ */
+
+    .contacts-section {
+        height: 50vh;
+        max-width: 100%;
+    }
+
+    
+    
+    /* SECTION Contacts=Contatos ---------------------------------------------- */
+    .contacts-flower-one img{
+        display: none;
+    }
+    
+    .contacts-flower-two img {
+        display: none;
+    }
+
+    .contacts-container h1{
+        line-height: 45px;
+        font-size: 3rem;
+    }
+
+    .contacts-container p{
+        margin: 20px 0px;
+        padding: 0px 13px;
+    }
+
+    footer h2{
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+
+    footer h1{
+        font-size: 19px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 801px) and (max-width: 1300px){
+
+        .main-bella {
+            display: flex;
+            width: 100%;
+            padding-top: 4rem;
+            height: 100%;
+        }
+    
+        .img-logo{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .bella-container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    
+        .description-bella {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .text-bella {
+            text-align: center;
+        }
+    
+        .text-bella h1 {
+            font-size: 65px;
+            width: 100%;
+        }
+    
+        .text-bella p {
+            font-size: 18px;
+            width: 100%;
+        }
+    
+        .img-bella{
+            display: flex;
+            padding-top: 2rem;
+        }
+    
+        .img-bella img{
+            height: 30rem;
+        }
+    
+        .btn-bella {
+            width: 100%;
+        }
+    
+        .btn-bella {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .btn-bella button {
+            height: 3rem;
+        }
+
+        .win-title{
+            font-size: 25px;
+        }
+    }
+
